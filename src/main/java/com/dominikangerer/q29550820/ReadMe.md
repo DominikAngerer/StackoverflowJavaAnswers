@@ -3,7 +3,6 @@ Link: http://stackoverflow.com/q/29550820/1581725
 
 # Answer:
 Link: http://stackoverflow.com/a/29550948/1581725
-
 Instead of using 2 separate classes (`Shirt` and `Pants`) simply use one class - let's say `Cloth`. Tried it like that and worked fine:
 
 **Person class:**
@@ -45,25 +44,22 @@ Didn't use `@Expose` here or `@SerializedName("something")` because it wasn't ne
 
 Hope it helps you out - otherwise please explain your problem in more detail and I will try to help you.
 
-Update------------
+**----------- Update ------------**
 
-Okay normally it's quite easy to cast a Json as you have it there in an normal `Object` - but the thing is inside the map (`clothes`) you have also a normal `String` value. For this purpose I would suggest you to enable the `Gson` functionality `@Expose` I will tell you why this would be a good idea.
+Okay normally it's quite easy to cast a Json as you have it there in an normal `Object` - but the thing is inside the map (`clothes`) you have also a normal `String` value. For this purpose I would suggest you to enable the `Gson` functionality `@Expose` I will tell you why this would be a good idea later.
 
 Let's start:
-I removed the `Clothes` class with a `Map<String, Object>` which `Gson` can easily deserialize - problem here was that the we also have the gender inside that map - but no big problem at all. I modified the Person class which now works with the `@Expose` annotation like this:
+I removed the `Clothes` class with a `Map<String, Object>` which `Gson` can easily deserialize - problem here was that the we also have the gender inside that map. I modified the Person class which now works like this:
 
 **Person v2:**
 
     package com.dominikangerer.q29550820;
 
     public class Person {
-    	@Expose
     	private String name;
     
-    	@Expose
     	private String lastName;
     
-    	@Expose
     	@SerializedName("clothes")
     	private Map<String, Object> clothesWrapper;
     
