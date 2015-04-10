@@ -1,3 +1,9 @@
+# Question:
+Link: http://stackoverflow.com/q/29550820/1581725
+
+# Answer:
+Link: http://stackoverflow.com/a/29550948/1581725
+
 Instead of using 2 separate classes (`Shirt` and `Pants`) simply use one class - let's say `Cloth`. Tried it like that and worked fine:
 
 **Person class:**
