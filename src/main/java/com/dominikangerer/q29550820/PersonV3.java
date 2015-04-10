@@ -30,8 +30,8 @@ public class PersonV3 {
 	}
 
 	public Map<String, Cloth> getClothes() {
-		Gson g = new Gson();
 		if (clothes == null) {
+			Gson g = new Gson();
 			clothes = new HashMap<String, Cloth>();
 			for (Entry<String, Object> entry : clothesWrapper.entrySet()) {
 				if (entry.getKey().equals("gender")) {
