@@ -1,0 +1,17 @@
+{   
+"name": "Jhon",
+"lastName": "Smith",
+"clothes": {
+    "gender":"male",
+    "Shirt": {
+        "id": 113608,
+        "name": "Green Shirt",
+        "size": "Large"
+    },
+    "Pants": {
+        "id": 115801,
+        "name": "Black Leather Pants",
+        "size": "Large"
+       }
+    }
+}
