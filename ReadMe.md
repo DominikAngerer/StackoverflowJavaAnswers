@@ -2,7 +2,7 @@
 
 Here I will add my future answers to questions which needs runnable java examples for stackoverflow.
 
-## Question Index:
+## Question Index
 
 [q29550820](http://stackoverflow.com/q/29550820/1581725): Custom deserialization with Gson   
 [q28130190](http://stackoverflow.com/q/28130190/1581725): Rounding 2 decimal places with DecimalFormat using default Locale   
