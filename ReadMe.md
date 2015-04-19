@@ -2,7 +2,7 @@
 
 Here I will add my future answers to questions which needs runnable java examples for stackoverflow.
 
-## Question Index
+## Question/Answer Index
 
 [q24473920](http://stackoverflow.com/q/24473920/1581725) - MySQL Minecraft Bukkit Error because not executing properly     
 [q25077756](http://stackoverflow.com/q/25077756/1581725) - Gson string with key     
